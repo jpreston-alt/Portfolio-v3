@@ -40,3 +40,24 @@ h2 {
 #title-container {
     padding-top: 175px;
 }
+
+.subtitle {
+    margin: 0px;
+    font-size: 22px;
+    color: rgb(168, 167, 167);
+}
+
+.contact-li {
+    font-size: 13px;
+    padding-left: 10px;
+    font-weight: 100;
+    color: rgb(228, 228, 228) !important;
+}
+
+.contact-icon {
+    color: rgb(228, 228, 228) !important;
+}
+
+/* #about-me-section {
+    width: 35%;
+} */

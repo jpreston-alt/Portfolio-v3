@@ -27,11 +27,11 @@
         <div class="uk-navbar-right">
             <ul class="uk-navbar-nav">
                 <li class="uk-active"><a href="">Home</a></li>
-                <li><a href="#offcanvas-push" uk-toggle>About</a></li>
-                <li><a href="">Portfolio</a></li>
+                <li><a href="#about-me-canvas" uk-toggle>About</a></li>
+                <li><a href="#portfolio-section">Portfolio</a></li>
                 <li><a href="">Skills</a></li>
                 <li><a href="">Resume</a></li>
-                <li><a href="">Contact</a></li>
+                <li><a href="#contact-canvas" uk-toggle>Contact</a></li>
             </ul>
         </div>
     </nav>
@@ -40,25 +40,93 @@
             <div class="uk-text-center" uk-grid>
                 <div class="uk-width-2-3">
                     <h1 class="uk-heading-medium" style="margin: 0px">Joanna Preston</h1>
-                    <h5 class="uk-text-lighter" style="margin: 0px; font-size: 20px;">Full-Stack Web Developer | Designer | Seattle, WA</h5>
+                    <h5 class="uk-text-lighter subtitle">Full-Stack Web Developer & Designer</h5>
                 </div>
             </div>
         </div>
     </div>
 
-    <div style="height: 500px">
-
+    <div class="uk-container" style="margin-top: 40px;">
+    <div class="uk-child-width-1-3@m" uk-grid id="portfolio-section"
+        uk-scrollspy="cls: uk-animation-fade; target: .uk-card; delay: 250; repeat: true">
+        <div>
+            <div class="uk-card uk-card-default uk-card-body">
+                <h3 class="uk-card-title">Fade</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            </div>
+        </div>
+        <div>
+            <div class="uk-card uk-card-default uk-card-body">
+                <h3 class="uk-card-title">Fade</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            </div>
+        </div>
+        <div>
+            <div class="uk-card uk-card-default uk-card-body">
+                <h3 class="uk-card-title">Fade</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            </div>
+        </div>
+        <div>
+            <div class="uk-card uk-card-default uk-card-body">
+                <h3 class="uk-card-title">Fade</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            </div>
+        </div>
+        <div>
+            <div class="uk-card uk-card-default uk-card-body">
+                <h3 class="uk-card-title">Fade</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            </div>
+        </div>
+        <div>
+            <div class="uk-card uk-card-default uk-card-body">
+                <h3 class="uk-card-title">Fade</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            </div>
+        </div>
+    </div>
     </div>
 
     <!-- OFF CANVAS ELEMENTS -->
     <!-- off canvas about section -->
-    <div id="offcanvas-push" uk-offcanvas="mode: push; overlay: true">
-        <div class="uk-offcanvas-bar" >
+    <div id="about-me-canvas" uk-offcanvas="mode: push; overlay: true">
+        <div class="uk-offcanvas-bar" id="about-me-section">
             <button class="uk-offcanvas-close" type="button" uk-close></button>
             <h3>About Me</h3>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
                 magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
                 commodo consequat.</p>
+        </div>
+    </div>
+
+    <!-- off canvas contact section -->
+    <div id="contact-canvas" uk-offcanvas="mode: push; overlay: true">
+        <div class="uk-offcanvas-bar">
+            <button class="uk-offcanvas-close" type="button" uk-close></button>
+            <h3>Contact Me</h3>
+            <ul class="uk-list">
+                <li>
+                    <a uk-icon="icon: mail" class="contact-icon contact-link-icon" href="mailto:joannappreston@gmail.com"></a>
+                    <a class="contact-link contact-li uk-text-middle" href="mailto:joannappreston@gmail.com">joannappreston@gmail.com</a>
+                </li>
+                <li>
+                    <span class="contact-icon" uk-icon="icon: receiver"></span>
+                    <span class="contact-li uk-text-middle">(503) 536-3910</span>
+                </li>
+                <li>
+                    <span uk-icon="icon: home" class="contact-icon" ></span>
+                    <span class="contact-li uk-text-bottom">Seattle, WA 98199</span>
+                </li>
+                <li>
+                    <a uk-icon="icon: github" href="https://github.com/jpreston-alt" class="contact-icon contact-link-icon"></a>
+                    <a class="contact-link contact-li uk-text-middle" href="https://github.com/jpreston-alt">jpreston-alt</a>
+                </li>
+                <li>
+                    <a uk-icon="icon: linkedin" href="https://www.linkedin.com/in/joanna-preston/" class="contact-icon contact-link-icon"></a>
+                    <a class="contact-link contact-li uk-text-bottom" href="https://www.linkedin.com/in/joanna-preston/">Joanna Preston</a>
+                </li>
+            </ul>
         </div>
     </div>
 
