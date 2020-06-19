@@ -1,0 +1,25 @@
+/* ANIMATIONS */
+#my-name {
+  animation: fadeInLeft;
+  animation-duration: 3s;
+}
+
+#my-sub {
+  animation: fadeInRight;
+  animation-duration: 3s;
+}
+
+#pic-section {
+    animation: fadeIn;
+    animation-duration: 5s;
+}
+
+.hide {
+    display: none;
+    transition: .8s ease;
+}
+
+/* #portfolio-section {
+    animation: fadeIn;
+    animation-duration: 5s;
+} */
