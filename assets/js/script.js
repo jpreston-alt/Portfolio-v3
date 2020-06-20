@@ -86,19 +86,29 @@ $(document).ready(function () {
         let newCard =
             `<div>
                 <div class="uk-card uk-card-default">
-                    <div class="uk-card-media-top">
-                        <figure class="pic-container">
-                            <div class="uk-card-body about-project">
-                                <h3 class="uk-card-title">${card.title}</h3>
-                                <p>${card.about}</p>
-                            </div>
-                            <div class="overlay">
-                                <img src="${card.imgURL}" alt="Placeholder image" class="portfolio-img">
-                            </div>
-                        </figure>
+                    <div class="uk-card-body portfolio-card-body">
+                        <div class="uk-position-relative uk-visible-toggle uk-light" tabindex="-1" uk-slideshow>
+                            <ul class="uk-slideshow-items">
+                                <li>
+                                    <h3 class="uk-card-title project-title">${card.title}</h3>
+                                    <p class="project-description">${card.about}</p>
+                                </li>
+                                <li>
+                                    <img src="${card.imgURL}" alt="" uk-cover>
+                                </li>
+                            </ul>
+                            <a class="uk-position-top-right uk-position-small uk-hidden-hover" href="#" uk-slidenav-next uk-slideshow-item="next"></a>
+                        </div>
                     </div>
-                    <div class="uk-card-footer">
-                        <a href="#" class="uk-button uk-button-text">Read more</a>
+                    <div class="uk-card-footer portfolio-card-footer">
+                        <div class="uk-child-width-1-2@m uk-grid-match" uk-grid>
+                            <div class="">
+                                <button class="uk-button uk-button-default">View Website</button>
+                            </div>
+                            <div class="">
+                                <button class="uk-button uk-button-default">GitHub Repo</button>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>`
