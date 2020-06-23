@@ -3,16 +3,15 @@ body, html{
     font-family: 'Roboto', sans-serif !important;
 }
 
+.uk-navbar {
+    background: none !important;
+}
+
 #pic-section {
-    /* background-image: url("../images/green-leaves.jpg"); */
-    /* background-image: url('./images/leaf.jpg'); */
-    /* background-image: url("./images/pink-flower.jpg"); */
-    /* background-image: url("./images/yellow-flowers.jpg"); */
-    /* background-image: url("./images/green-cactus.jpg");   */
     background-position: center;
     background-size: cover;
     width: 100%;
-    height: 700px;
+    height: 725px;
 }
 
 #logo-img {
@@ -24,7 +23,7 @@ body, html{
     height: 620px;
 }
 
-h1, h3 {
+h1, h3, h4, h5 {
     /* font-weight: 300 !important; */
     font-family: 'Montserrat', sans-serif !important;
 }
@@ -45,16 +44,17 @@ h2 {
 .subtitle {
     margin: 0px;
     color: rgb(168, 167, 167);
+    /* color: white; */
     font-family: 'Montserrat', sans-serif !important;
     text-transform: uppercase;
     font-size: 18px
 }
 
 .contact-li {
-    font-size: .75em;
+    font-size: .8em;
     padding-left: 10px;
     font-weight: 100;
-    color: rgb(228, 228, 228) !important;
+    color: rgb(202, 200, 200) !important;
     text-transform: uppercase;
     font-family: 'Roboto', sans-serif !important;
 }
@@ -65,13 +65,24 @@ h2 {
 
 .footer {
     background-color: #f8f8f8;
-    margin-top: 40px;
+    /* margin-top: 100px; */
     padding-top: 20px;
     padding-bottom: 10px;
 }
 
-.portfolio-container {
+.portfolio-container, .skills-container {
     max-width: 1000px;
+    margin-top: 0px !important;
+}
+
+.skills-container {
+    padding-bottom: 100px;
+}
+
+.skills-pic-section {
+    background-image: url("../images/green-leaves-flip.jpeg");  
+    background-position: center;
+    background-size: cover;
 }
 
 /* CARDS */
@@ -109,6 +120,7 @@ polyline {
 
 .portfolio-card-footer {
     border-top: none !important;
+    padding-bottom: 40px;
 }
 
 .portfolio-card-body {
@@ -118,3 +130,28 @@ polyline {
 .project-title {
     padding-top: 15px;
 }
+
+.portfolio-btn {
+    border-radius: 20px;
+    border: 1px solid rgb(156, 231, 156);
+    color: rgb(156, 231, 156);
+    border: 1px solid #fda387;
+    color: #fda387;
+}
+
+.portfolio-btn:hover {
+    background-color: #fda387;
+    color: white;
+    border: none;
+}
+
+.portfolio-title, .skills-title {
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+
+.skills-icon {
+    /* font-size: 34px; */
+    /* color: rgb(156, 231, 156) !important; */
+}
+

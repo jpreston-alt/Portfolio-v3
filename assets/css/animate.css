@@ -19,7 +19,17 @@
     transition: .8s ease;
 }
 
-/* #portfolio-section {
-    animation: fadeIn;
-    animation-duration: 5s;
-} */
+.slide-left {
+  animation: slideInLeft;
+  animation-duration: 3s;
+}
+
+.slide-right {
+  animation: slideInRight;
+  animation-duration: 3s;
+}
+
+.slide-up {
+  animation: slideInUp;
+  animation-duration: 3s;
+}

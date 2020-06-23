@@ -23,22 +23,23 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css" />
 </head>
 <body>
-    <nav class="uk-navbar-container uk-navbar" uk-navbar>
-        <!-- <div class="uk-navbar-left">
-            <img src="logo2.jpeg" id="logo-img">
-        </div> -->
-        <div class="uk-navbar-right">
-            <ul class="uk-navbar-nav">
-                <li class="uk-active"><a href="">Home</a></li>
-                <li><a href="#about-me-canvas" uk-toggle>About</a></li>
-                <li><a href="#portfolio-section">Portfolio</a></li>
-                <li><a href="">Skills</a></li>
-                <li><a href="">Resume</a></li>
-                <li><a href="#contact-canvas" uk-toggle>Contact</a></li>
-            </ul>
-        </div>
-    </nav>
     <div id="pic-section" uk-parallax="bgy: -200">
+        <nav class="uk-navbar-container uk-navbar" uk-navbar>
+            <!-- <div class="uk-navbar-left">
+                <img src="logo2.jpeg" id="logo-img">
+            </div> -->
+            <div class="uk-navbar-right">
+                <ul class="uk-navbar-nav">
+                    <li class="uk-active"><a href="">Home</a></li>
+                    <li><a href="#about-me-canvas" uk-toggle>About</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a id="skills-nav" href="#skills">Skills</a></li>
+                    <li><a href="#resume-modal" uk-toggle>Resume</a></li>
+                    <li><a href="#contact-canvas" uk-toggle>Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+    
         <div class="uk-container" id="title-container">
             <div class="uk-text-center" uk-grid>
                 <div class="uk-width-2-3">
@@ -49,44 +50,92 @@
         </div>
     </div>
 
-    <div class="uk-container portfolio-container" style="margin-top: 40px;">
-        <!-- <div class="uk-child-width-1-3@m uk-grid-match" uk-grid id="portfolio-section"> -->
-        <div class="uk-child-width-1-2@m uk-grid-match" uk-grid id="portfolio-section"
-            uk-scrollspy="cls: uk-animation-fade; target: .uk-card; delay: 250; repeat: true">
-            <!-- portfolio cards go here -->
+    <div class="green-background">
+        <div class="uk-container portfolio-container" style="margin-top: 40px;" id="portfolio">
+            <div class="uk-text-center">
+                <h1 class="portfolio-title">Portfolio</h1>
+            </div>
+            <div class="uk-child-width-1-2@m uk-grid-match" uk-grid id="portfolio-section"
+                uk-scrollspy="cls: uk-animation-fade; target: .uk-card; delay: 250; repeat: true">
+                <!-- portfolio cards go here -->
+            </div>
+        </div>
+    </div>
 
-            <!-- <div>
-                <div class="uk-card uk-card-default">
-                    <div class="uk-card-body portfolio-card-body">
-                        <div class="uk-position-relative uk-visible-toggle uk-light" tabindex="-1" uk-slideshow>
-                            <ul class="uk-slideshow-items">
-                                <li>
-                                    <h3 class="uk-card-title project-title">Eat-Da-Burger</h3>
-                                    <p class="project-description">A full-stack, restaurant application that allows the user to input, devour,rate, and delete tasty burgers from a MySQL
-                                        database. Eat-Da-Burger utilizes the MVC design pattern, and is built using MySQL, Node, Express,
-                                        Handlebars and a
-                                        homemade ORM.</p>
-                                </li>
-                                <li>
-                                    <img src="assets/images/portfolio/burger2.png" alt="" uk-cover>
-                                </li>
-                            </ul>
-                            <a class="uk-position-top-right uk-position-small uk-hidden-hover" href="#" uk-slidenav-next uk-slideshow-item="next"></a>
-                        </div>
+
+    <div class="skills-pic-section" uk-parallax="bgy: -200">
+    <div class="uk-container skills-container" style="margin-top: 40px;" id="skills">
+        <div class="uk-text-center">
+            <h1 class="skills-title">Technical Skills</h1>
+        </div>
+        <!-- <div class="uk-child-width-1-3@m uk-grid-match" uk-grid id="portfolio-section"> -->
+        <div class="uk-child-width-1-3@m uk-grid-match" uk-grid
+            uk-scrollspy="cls: uk-animation-fade; target: .uk-card; delay: 250; repeat: true">
+            <div class="uk-text-center client-side-card">
+                <div class="uk-card uk-card-default skills-card">
+                    <div class="uk-card-body">
+                        <h3 class="uk-card-title">Client-Side</h3>
+                        <ul class="uk-list uk-list-divider">
+                            <li>HTML 5</li>
+                            <li>CSS 3</li>
+                            <li>JavaScript</li>
+                            <li>jQuery</li>
+                            <li>Bootstrap</li>
+                            <li>Bulma</li>
+                            <li>UIKit</li>
+                        </ul>
                     </div>
                     <div class="uk-card-footer portfolio-card-footer">
-                        <div class="uk-child-width-1-2@m uk-grid-match" uk-grid>
-                            <div class="">
-                                <button class="uk-button uk-button-default">Button</button>
-                            </div>
-                            <div class="">
-                                <button class="uk-button uk-button-default">Button</button>
-                            </div>
+                        <div>
+                            <span class="skills-icon" uk-icon="icon: code; ratio: 1.5"></span>
+                            <span class="skills-icon" uk-icon="icon: desktop; ratio: 1.5"></span>
                         </div>
                     </div>
                 </div>
-            </div> -->
+            </div>
+            <div class="uk-text-center server-side-card">
+                <div class="uk-card uk-card-default skills-card">
+                    <div class="uk-card-body">
+                        <h3 class="uk-card-title">Server-Side</h3>
+                        <ul class="uk-list uk-list-divider">
+                            <li>Node.js</li>
+                            <li>npm</li>
+                            <li>Express.js</li>
+                            <li>Handlebars</li>
+                            <li>MySQL</li>
+                            <li>Sequelize</li>
+                            <li>MongoDB</li>
+                        </ul>
+                    </div>
+                    <div class="uk-card-footer portfolio-card-footer">
+                        <div>
+                            <span class="skills-icon" uk-icon="icon: server; ratio: 1.5"></span>
+                            <span class="skills-icon" uk-icon="icon: database; ratio: 1.5"></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="uk-text-center design-card">
+                <div class="uk-card uk-card-default skills-card">
+                    <div class="uk-card-body">
+                    <h3 class="uk-card-title">Design</h3>
+                        <ul class="uk-list uk-list-divider">
+                            <li>Adobe InDesign</li>
+                            <li>Adobe Xcode</li>
+                            <li>Adobe Illustrator</li>
+                            <li>Sketchup</li>
+                            <li>AutoCAD</li>
+                        </ul>
+                    </div>
+                    <div class="uk-card-footer portfolio-card-footer">
+                        <div>
+                            <span class="skills-icon" uk-icon="icon: paint-bucket; ratio: 2"></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
+    </div>
     </div>
 
     <!-- OFF CANVAS ELEMENTS -->
@@ -128,6 +177,16 @@
                     <a class="contact-link contact-li uk-text-bottom" href="https://www.linkedin.com/in/joanna-preston/">Joanna Preston</a>
                 </li>
             </ul>
+        </div>
+    </div>
+
+    <!-- resume modal -->
+    <div id="resume-modal" class="uk-flex-top" uk-modal>
+        <div class="uk-modal-dialog uk-modal-body uk-margin-auto-vertical">
+            <button class="uk-modal-close-default" type="button" uk-close></button>
+            <p>
+                <embed src="assets/images/JoannaPreston_resume.pdf" type="application/pdf" width="100%" height="600px" />
+            </p>
         </div>
     </div>
 

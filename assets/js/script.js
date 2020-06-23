@@ -1,17 +1,6 @@
 $(document).ready(function () {
 
-    // $("#portfolio-section").on("mouseover", ".project-card", displayProjectPic);
-    // $("#portfolio-section").on("mouseleave", ".project-card", displayProjectInfo);
-
-    $(document).on("mouseover", ".overlay", function () {
-        $(".overlay").css("opacity", "0");
-        $(this).css("opacity", ".95");
-    });
-
-    // event listener when mouse leaves project card - hides info
-    $(document).on("mouseleave", ".overlay", function () {
-        $(".overlay").css("opacity", "0");
-    });
+    $("#skills-nav").on("click", skillsAnimation);
 
     // function consturctor Project Card
     function ProjectCard(title, about, imgURL, siteURL, repoURL) {
@@ -79,7 +68,15 @@ $(document).ready(function () {
         "https://github.com/jpreston-alt/Burger-Logger"
     );
 
-    let projectCardsArr = [burgerCard, notepadCard, quarCard, profileGenCard, weatherCard, plannerCard, quizCard];
+    const budgetCard = new ProjectCard(
+        "Check Yourself",
+        "A full-stack budgeting application, that helps the user track their monthly expenses and manage their money wisely, based on the 50/30/20 budgeting rule. Check Yourself is built using Node, a MySQL Database, and Passport for user authentication.",
+        "assets/images/portfolio/check-yourself.png",
+        "https://jp-burger-logger.herokuapp.com/",
+        "https://jp-project2.herokuapp.com/"
+    );
+
+    let projectCardsArr = [budgetCard, quarCard, burgerCard, notepadCard, profileGenCard, weatherCard, plannerCard, quizCard];
 
     // function to render project cards to screen
     function renderCard(card) {
@@ -102,11 +99,15 @@ $(document).ready(function () {
                     </div>
                     <div class="uk-card-footer portfolio-card-footer">
                         <div class="uk-child-width-1-2@m uk-grid-match" uk-grid>
-                            <div class="">
-                                <button class="uk-button uk-button-default">View Website</button>
+                            <div>
+                                <a href="${card.siteURL}" target="_blank">
+                                    <button class="uk-button uk-button-default portfolio-btn">View Website</button>
+                                </a>
                             </div>
-                            <div class="">
-                                <button class="uk-button uk-button-default">GitHub Repo</button>
+                            <div>
+                                <a href="${card.repoURL}" target="_blank">
+                                    <button class="uk-button uk-button-default portfolio-btn">GitHub Repo</button>
+                                </a>
                             </div>
                         </div>
                     </div>
@@ -129,28 +130,17 @@ $(document).ready(function () {
         }, 50);
     };
 
-    function displayProjectPic() {
-        let projectInfo = $(this).find(".about-project")
-        let projectPic = $(this).find(".project-pic")
-        projectInfo.addClass("hide");
-        projectPic.removeClass("hide");
-        // console.log($(this).parent().attr("uk-scrollspy"));
-        // $(this).parent().removeAttr("uk-scrollspy");
-    };
-
-    function displayProjectInfo() {
-        let projectInfo = $(this).find(".about-project")
-        let projectPic = $(this).find(".project-pic")
-        projectInfo.removeClass("hide");
-        projectPic.addClass("hide");
-        // $(this).parent().attr("uk-scrollspy", "cls: uk-animation-fade; target: .uk-card; delay: 250; repeat: false");
-    };
-
-
     function init() {
         // render project cards
         projectCardsArr.forEach(renderCard);
         loadBackgroundImg();
+        // skillsAnimation();
+    };
+
+    function skillsAnimation() {
+        $(".client-side-card").addClass("slide-left");
+        $(".server-side-card").addClass("slide-up");
+        $(".design-card").addClass("slide-right");
     };
 
     init();
