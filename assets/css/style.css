@@ -10,8 +10,16 @@ body, html{
 #pic-section {
     background-position: center;
     background-size: cover;
-    width: 100%;
-    height: 725px;
+    background-repeat: no-repeat;
+    /* width: 100%; */
+    min-height: 1200px;
+    /* height: 725px; */
+}
+
+.skills-pic-section {
+    background-image: url("../images/green-leaves.jpg");  
+    background-position: center;
+    background-size: cover;
 }
 
 #logo-img {
@@ -38,7 +46,7 @@ h2 {
 }
 
 #title-container {
-    padding-top: 175px;
+    padding-top: 100px;
 }
 
 .subtitle {
@@ -77,12 +85,6 @@ h2 {
 
 .skills-container {
     padding-bottom: 100px;
-}
-
-.skills-pic-section {
-    background-image: url("../images/green-leaves-flip.jpeg");  
-    background-position: center;
-    background-size: cover;
 }
 
 /* CARDS */
@@ -145,13 +147,40 @@ polyline {
     border: none;
 }
 
-.portfolio-title, .skills-title {
-    margin-top: 100px;
-    margin-bottom: 100px;
+.skills-title, .portfolio-title {
+    margin-bottom: 40px;
+    margin-top: 120px;
 }
 
+/* .portfolio-title {
+    margin-top: 20px;
+    margin-bottom: 100px;
+} */
+
 .skills-icon {
-    /* font-size: 34px; */
-    /* color: rgb(156, 231, 156) !important; */
+    color: #fda387;
+}
+
+.name-container {
+    padding-left: 50%;
+}
+
+#about-me-container {
+    padding-top: 425px;
+}
+
+hr {
+    width: 7%;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #fda387;
+    height: 1px;
+    border: none;
+    /* margin-top: 20px; */
+    /* margin-bottom: 20px; */
+}
+
+#portfolio-section, #skills-section {
+    margin-top: 60px;
 }
 

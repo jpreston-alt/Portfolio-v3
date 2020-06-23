@@ -120,7 +120,8 @@ $(document).ready(function () {
 
     function loadBackgroundImg() {
         let img = new Image();
-        img.src = "assets/images/green-leaves.jpg";
+        // img.src = "assets/images/green-leaves.jpg";
+        img.src = "assets/images/top-left.jpeg";
 
         let int = setInterval(function () {
             if (img.complete) {
