@@ -42,7 +42,7 @@ h2 {
 }
 
 #title-container {
-    padding-top: 100px;
+    padding-top: 70px;
 }
 
 .subtitle {
@@ -50,6 +50,7 @@ h2 {
     color: #b1b1b1 !important;
     font-family: 'Montserrat', sans-serif !important;
     text-transform: uppercase;
+    font-weight: 300;
 }
 
 #about-me {
@@ -64,6 +65,7 @@ h2 {
 }
 
 .contact-li, .nav-li {
+    font-size: 1rem;
     padding-left: 10px;
     font-weight: 100;
     color: rgb(202, 200, 200) !important;
@@ -214,6 +216,14 @@ polyline {
         padding: 0px 24px 0px 24px;
         font-size: 14px;
     }
+
+    .contact-li, .nav-li {
+        font-size: .8rem;
+    }
+
+    .subtitle {
+        font-weight: 100;
+    }
 }
 
 @media only screen and (min-width: 769px) {
@@ -225,6 +235,7 @@ polyline {
     }
 
     #title-container {
+        padding-top: 100px;
         padding-left: 50%;
         width: 50%;
     }   
