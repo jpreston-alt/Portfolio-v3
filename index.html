@@ -24,18 +24,18 @@
 </head>
 <body>
     <div id="pic-section" uk-parallax="bgy: -200">
-        <nav class="uk-navbar-container uk-navbar" uk-navbar>
+        <nav class="uk-navbar-container uk-navbar" uk-navbar style="z-index: 980;" uk-sticky="bottom: #offset">
             <!-- <div class="uk-navbar-left">
                 <img src="logo2.jpeg" id="logo-img">
             </div> -->
             <div class="uk-navbar-right">
                 <ul class="uk-navbar-nav">
-                    <li class="uk-active"><a href="">Home</a></li>
-                    <li><a href="#about-me-canvas" uk-toggle>About</a></li>
-                    <li><a href="#portfolio">Portfolio</a></li>
-                    <li><a id="skills-nav" href="#skills">Skills</a></li>
-                    <li><a href="#resume-modal" uk-toggle>Resume</a></li>
-                    <li><a href="#contact-canvas" uk-toggle>Contact</a></li>
+                    <li><a href="#pic-section" class="nav-item" uk-scroll>Home</a></li>
+                    <li><a href="#about-me-container" class="nav-item" uk-scroll>About</a></li>
+                    <li><a href="#portfolio" class="nav-item" uk-scroll>Portfolio</a></li>
+                    <li><a id="skills-nav" href="#skills" class="nav-item" uk-scroll>Skills</a></li>
+                    <li><a href="#resume-modal" uk-toggle class="nav-item">Resume</a></li>
+                    <li><a href="#contact-canvas" uk-toggle class="nav-item">Contact</a></li>
                 </ul>
             </div>
         </nav>
@@ -54,21 +54,27 @@
             <div class="uk-text-center" uk-grid>
                 <div class="uk-width-1-3"></div>
                 <div class="uk-width-2-3">
-                    <h1 class="">About Me</h1>
-                    <hr>
-                   <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
-                    aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
-                    aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
-                    aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-                   </p>
-                    <img src="assets/images/mebw.png" style="width: 125px;">
+                    <div id="about-me">
+                        <h1 class="">About Me</h1>
+                        <hr>
+                        <p class="uk-text-justify">
+                        Hi! I'm Joanna, welcome to my site. I’m a designer, builder, and full-stack web developer. I spent
+                        the last five years of my career in retail design working for Urban Outfitters as a Market Display Artist. My career in
+                        design has taught me how to learn quickly, creatively solve problems, and build things that are both functional and visually engaging. 
+                        It's my passion for making things that made me fall in love with web development ever since my very first "Hello World".
+                        <br><br>
+                        Currently, I'm finishing up a Certificate in Full-Stack Web Development from the University of Washington and am working
+                        hard to transition into web development as a career. I am excited about merging my background in design with my newly
+                        developed technical skills, to build both useful and beautiful things on the web.
+                        </p>
+                        <img src="assets/images/mebw.png" style="width: 125px;">
+                    </div>
                 </div>
             </div>
         </div>
     </div>
 
-    <div class="green-background">
+    <div class="pink-background">
         <div class="uk-container portfolio-container" style="margin-top: 40px;" id="portfolio">
             <div class="uk-text-center">
                 <h1 class="portfolio-title">Portfolio</h1>
@@ -88,7 +94,6 @@
             <h1 class="skills-title">Technical Skills</h1>
             <hr>
         </div>
-        <!-- <div class="uk-child-width-1-3@m uk-grid-match" uk-grid id="portfolio-section"> -->
         <div class="uk-child-width-1-3@m uk-grid-match" uk-grid
             uk-scrollspy="cls: uk-animation-fade; target: .uk-card; delay: 250; repeat: true" id="skills-section">
             <div class="uk-text-center client-side-card">
@@ -157,22 +162,11 @@
     </div>
 
     <!-- OFF CANVAS ELEMENTS -->
-    <!-- off canvas about section -->
-    <div id="about-me-canvas" uk-offcanvas="mode: push; overlay: true">
-        <div class="uk-offcanvas-bar" id="about-me-section">
-            <button class="uk-offcanvas-close" type="button" uk-close></button>
-            <h3>About Me</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
-                magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
-                commodo consequat.</p>
-        </div>
-    </div>
-
     <!-- off canvas contact section -->
-    <div id="contact-canvas" uk-offcanvas="mode: push; overlay: true">
+    <div id="contact-canvas" uk-offcanvas="overlay: true">
         <div class="uk-offcanvas-bar">
             <button class="uk-offcanvas-close" type="button" uk-close></button>
-            <h3>Contact Me</h3>
+            <h3 id="contact-title">Contact Me</h3>
             <ul class="uk-list">
                 <li>
                     <a uk-icon="icon: mail" class="contact-icon contact-link-icon" href="mailto:joannappreston@gmail.com"></a>
@@ -209,7 +203,11 @@
     </div>
 
     <footer class="uk-text-center uk-text-middle footer">
-        <p>@ Joanna Preston</p>
+        <span>© Joanna Preston</span><br>
+        <a uk-icon="icon: github" href="https://github.com/jpreston-alt" class="contact-icon contact-link-icon"></a>
+        <a uk-icon="icon: mail" class="contact-icon contact-link-icon" href="mailto:joannappreston@gmail.com"></a>
+        <a uk-icon="icon: linkedin" href="https://www.linkedin.com/in/joanna-preston/"
+            class="contact-icon contact-link-icon"></a>
     </footer>
 
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>

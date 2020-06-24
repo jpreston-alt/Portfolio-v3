@@ -1,10 +1,16 @@
 body, html{
     font-weight: 300;
     font-family: 'Roboto', sans-serif !important;
+    color: gray;
 }
 
 .uk-navbar {
     background: none !important;
+    /* background-color: rgb(255, 255, 255) !important; */
+}
+
+.nav-item:hover {
+    color: #fda387 !important;
 }
 
 #pic-section {
@@ -34,11 +40,13 @@ body, html{
 h1, h3, h4, h5 {
     /* font-weight: 300 !important; */
     font-family: 'Montserrat', sans-serif !important;
+    color: #2c3e50 !important;
 }
 
 h2 {
     font-family: 'Roboto', sans-serif !important;
     /* text-transform: uppercase; */
+    color: #2c3e50;
 }
 
 .full-height {
@@ -52,7 +60,7 @@ h2 {
 .subtitle {
     margin: 0px;
     color: rgb(168, 167, 167);
-    /* color: white; */
+    color: #b1b1b1 !important;
     font-family: 'Montserrat', sans-serif !important;
     text-transform: uppercase;
     font-size: 18px
@@ -72,15 +80,17 @@ h2 {
 }
 
 .footer {
-    background-color: #f8f8f8;
+    background-color: #2c3e50d8;
     /* margin-top: 100px; */
     padding-top: 20px;
     padding-bottom: 10px;
+    color: white;
+    font-weight: lighter;
 }
 
 .portfolio-container, .skills-container {
     max-width: 1000px;
-    margin-top: 0px !important;
+    margin-top: 200px;
 }
 
 .skills-container {
@@ -112,7 +122,7 @@ h2 {
 }
 
 .project-description {
-    color: rgb(95, 94, 94);
+    color: gray;
 }
 
 polyline {
@@ -166,7 +176,8 @@ polyline {
 }
 
 #about-me-container {
-    padding-top: 425px;
+    margin-top: 225px;
+    padding-top: 200px;
 }
 
 hr {
@@ -182,5 +193,29 @@ hr {
 
 #portfolio-section, #skills-section {
     margin-top: 60px;
+}
+
+#about-me {
+    border: 1px solid #fda387;
+    padding: 30px;
+    border-radius: 20px;
+}
+
+.portfolio-card {
+    /* border: 1px solid #fda387;
+    border-radius: 20px;
+    box-shadow: none; */
+}
+
+.uk-offcanvas-bar {
+    background-color: #2c3e50d8;
+}
+
+#contact-title {
+    color: white !important;
+}
+
+a:hover {
+    color: #fda387 !important;
 }
 

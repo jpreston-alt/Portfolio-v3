@@ -1,6 +1,7 @@
 $(document).ready(function () {
 
     $("#skills-nav").on("click", skillsAnimation);
+    $("#pic-section").on("click", loadBackgroundImg);
 
     // function consturctor Project Card
     function ProjectCard(title, about, imgURL, siteURL, repoURL) {
@@ -82,7 +83,7 @@ $(document).ready(function () {
     function renderCard(card) {
         let newCard =
             `<div>
-                <div class="uk-card uk-card-default">
+                <div class="uk-card uk-card-default portfolio-card">
                     <div class="uk-card-body portfolio-card-body">
                         <div class="uk-position-relative uk-visible-toggle uk-light" tabindex="-1" uk-slideshow>
                             <ul class="uk-slideshow-items">
@@ -120,7 +121,6 @@ $(document).ready(function () {
 
     function loadBackgroundImg() {
         let img = new Image();
-        // img.src = "assets/images/green-leaves.jpg";
         img.src = "assets/images/top-left.jpeg";
 
         let int = setInterval(function () {
