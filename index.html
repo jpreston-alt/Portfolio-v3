@@ -14,7 +14,8 @@
 
     <!-- my stylesheets -->
     <link rel="stylesheet" href="./assets/css/style.css"/>
-    <link rel="stylesheet" href="./assets/css/animate.css" />
+    <link rel="stylesheet" href="./assets/css/animate.css"/>
+    <!-- <link rel="stylesheet" href="./assets/css/navbar.css" /> -->
 
     <!-- google fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
@@ -23,10 +24,11 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css" />
 </head>
 <body>
+    
     <div id="pic-section" uk-parallax="bgy: -200">
         <nav class="uk-navbar-container uk-navbar" uk-navbar style="z-index: 980;" uk-sticky="bottom: #offset">
             <div class="uk-navbar-right">
-                <ul class="uk-navbar-nav">
+                <ul class="uk-navbar-nav uk-visible@s">
                     <li><a href="#pic-section" class="nav-item" uk-scroll>Home</a></li>
                     <li><a href="#about-me-container" class="nav-item" uk-scroll>About</a></li>
                     <li><a href="#portfolio" class="nav-item" uk-scroll>Portfolio</a></li>
@@ -34,8 +36,24 @@
                     <li><a href="#resume-modal" uk-toggle class="nav-item">Resume</a></li>
                     <li><a href="#contact-canvas" uk-toggle class="nav-item">Contact</a></li>
                 </ul>
+                <a class="uk-hidden@s" href="#menu-canvas" uk-toggle><span class="menu-icon" uk-icon="icon: menu; ratio: 1.5"></span></a>
             </div>
         </nav>
+
+        <!-- mobile menu -->
+        <div id="menu-canvas" uk-offcanvas="overlay: true">
+            <div class="uk-offcanvas-bar">
+                <button class="uk-offcanvas-close" type="button" uk-close></button>
+                    <ul class="uk-list">
+                        <li><a href="#pic-section" class="nav-li" uk-scroll>Home</a></li>
+                        <li><a href="#about-me-container" class="nav-li" uk-scroll>About</a></li>
+                        <li><a href="#portfolio" class="nav-li" uk-scroll>Portfolio</a></li>
+                        <li><a id="skills-nav" href="#skills" class="nav-li" uk-scroll>Skills</a></li>
+                        <li><a href="#resume-modal" uk-toggle class="nav-li">Resume</a></li>
+                        <li><a href="#contact-canvas" uk-toggle class="nav-li">Contact</a></li>
+                    </ul>
+            </div>
+        </div>
     
         <div class="uk-container">
             <div class="uk-text-center">

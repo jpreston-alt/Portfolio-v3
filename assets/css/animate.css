@@ -19,6 +19,10 @@
     transition: .8s ease;
 }
 
+.display-none {
+  display: none;
+}
+
 .slide-left {
   animation: slideInLeft;
   animation-duration: 3s;
