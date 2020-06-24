@@ -25,9 +25,6 @@
 <body>
     <div id="pic-section" uk-parallax="bgy: -200">
         <nav class="uk-navbar-container uk-navbar" uk-navbar style="z-index: 980;" uk-sticky="bottom: #offset">
-            <!-- <div class="uk-navbar-left">
-                <img src="logo2.jpeg" id="logo-img">
-            </div> -->
             <div class="uk-navbar-right">
                 <ul class="uk-navbar-nav">
                     <li><a href="#pic-section" class="nav-item" uk-scroll>Home</a></li>
@@ -40,24 +37,22 @@
             </div>
         </nav>
     
-        <div class="uk-container" id="title-container">
-            <div class="uk-text-center" uk-grid>
-                <div class="uk-width-1-2"></div>
-                <div class="uk-width-1-2">
+        <div class="uk-container">
+            <div class="uk-text-center">
+                <div id="title-container">
                     <h1 class="uk-heading-medium" id="my-name" style="margin: 0px">Joanna Preston</h1>
                     <h5 class="uk-text-lighter subtitle" id="my-sub">Full-Stack Web Developer & Designer</h5>
                 </div>
             </div>
         </div>
 
-        <div class="uk-container" id="about-me-container">
-            <div class="uk-text-center" uk-grid>
-                <div class="uk-width-1-3"></div>
-                <div class="uk-width-2-3">
+        <div class="uk-container">
+            <div class="uk-text-center">
+                <div id="about-me-container">
                     <div id="about-me">
                         <h1 class="">About Me</h1>
                         <hr>
-                        <p class="uk-text-justify">
+                        <p class="uk-text-justify about-me-desc">
                         Hi! I'm Joanna, welcome to my site. I’m a designer, builder, and full-stack web developer. I spent
                         the last five years of my career in retail design working for Urban Outfitters as a Market Display Artist. My career in
                         design has taught me how to learn quickly, creatively solve problems, and build things that are both functional and visually engaging. 
@@ -87,78 +82,77 @@
         </div>
     </div>
 
-
     <div class="skills-pic-section" uk-parallax="bgy: -200">
-    <div class="uk-container skills-container" style="margin-top: 40px;" id="skills">
-        <div class="uk-text-center">
-            <h1 class="skills-title">Technical Skills</h1>
-            <hr>
+        <div class="uk-container skills-container" style="margin-top: 40px;" id="skills">
+            <div class="uk-text-center">
+                <h1 class="skills-title">Technical Skills</h1>
+                <hr>
+            </div>
+            <div class="uk-child-width-1-3@m uk-grid-match" uk-grid
+                uk-scrollspy="cls: uk-animation-fade; target: .uk-card; delay: 250; repeat: true" id="skills-section">
+                <div class="uk-text-center client-side-card">
+                    <div class="uk-card uk-card-default skills-card">
+                        <div class="uk-card-body">
+                            <h3 class="uk-card-title">Client-Side</h3>
+                            <ul class="uk-list uk-list-divider">
+                                <li>HTML 5</li>
+                                <li>CSS 3</li>
+                                <li>JavaScript</li>
+                                <li>jQuery</li>
+                                <li>Bootstrap</li>
+                                <li>Bulma</li>
+                                <li>UIKit</li>
+                            </ul>
+                        </div>
+                        <div class="uk-card-footer portfolio-card-footer">
+                            <div>
+                                <span class="skills-icon" uk-icon="icon: desktop; ratio: 1.5"></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="uk-text-center server-side-card">
+                    <div class="uk-card uk-card-default skills-card">
+                        <div class="uk-card-body">
+                            <h3 class="uk-card-title">Server-Side</h3>
+                            <ul class="uk-list uk-list-divider">
+                                <li>Node.js</li>
+                                <li>npm</li>
+                                <li>Express.js</li>
+                                <li>Handlebars</li>
+                                <li>MySQL</li>
+                                <li>Sequelize</li>
+                                <li>MongoDB</li>
+                            </ul>
+                        </div>
+                        <div class="uk-card-footer portfolio-card-footer">
+                            <div>
+                                <span class="skills-icon" uk-icon="icon: server; ratio: 1.5"></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="uk-text-center design-card">
+                    <div class="uk-card uk-card-default skills-card">
+                        <div class="uk-card-body">
+                        <h3 class="uk-card-title">Design</h3>
+                            <ul class="uk-list uk-list-divider">
+                                <li>Adobe InDesign</li>
+                                <li>Adobe Xcode</li>
+                                <li>Adobe Illustrator</li>
+                                <li>Sketchup</li>
+                                <li>AutoCAD</li>
+                            </ul>
+                        </div>
+                        <div class="uk-card-footer portfolio-card-footer">
+                            <div>
+                                <span class="skills-icon" uk-icon="icon: paint-bucket; ratio: 1.5"></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
-        <div class="uk-child-width-1-3@m uk-grid-match" uk-grid
-            uk-scrollspy="cls: uk-animation-fade; target: .uk-card; delay: 250; repeat: true" id="skills-section">
-            <div class="uk-text-center client-side-card">
-                <div class="uk-card uk-card-default skills-card">
-                    <div class="uk-card-body">
-                        <h3 class="uk-card-title">Client-Side</h3>
-                        <ul class="uk-list uk-list-divider">
-                            <li>HTML 5</li>
-                            <li>CSS 3</li>
-                            <li>JavaScript</li>
-                            <li>jQuery</li>
-                            <li>Bootstrap</li>
-                            <li>Bulma</li>
-                            <li>UIKit</li>
-                        </ul>
-                    </div>
-                    <div class="uk-card-footer portfolio-card-footer">
-                        <div>
-                            <span class="skills-icon" uk-icon="icon: desktop; ratio: 1.5"></span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="uk-text-center server-side-card">
-                <div class="uk-card uk-card-default skills-card">
-                    <div class="uk-card-body">
-                        <h3 class="uk-card-title">Server-Side</h3>
-                        <ul class="uk-list uk-list-divider">
-                            <li>Node.js</li>
-                            <li>npm</li>
-                            <li>Express.js</li>
-                            <li>Handlebars</li>
-                            <li>MySQL</li>
-                            <li>Sequelize</li>
-                            <li>MongoDB</li>
-                        </ul>
-                    </div>
-                    <div class="uk-card-footer portfolio-card-footer">
-                        <div>
-                            <span class="skills-icon" uk-icon="icon: server; ratio: 1.5"></span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="uk-text-center design-card">
-                <div class="uk-card uk-card-default skills-card">
-                    <div class="uk-card-body">
-                    <h3 class="uk-card-title">Design</h3>
-                        <ul class="uk-list uk-list-divider">
-                            <li>Adobe InDesign</li>
-                            <li>Adobe Xcode</li>
-                            <li>Adobe Illustrator</li>
-                            <li>Sketchup</li>
-                            <li>AutoCAD</li>
-                        </ul>
-                    </div>
-                    <div class="uk-card-footer portfolio-card-footer">
-                        <div>
-                            <span class="skills-icon" uk-icon="icon: paint-bucket; ratio: 1.5"></span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
     </div>
 
     <!-- OFF CANVAS ELEMENTS -->
@@ -203,7 +197,7 @@
     </div>
 
     <footer class="uk-text-center uk-text-middle footer">
-        <span>© Joanna Preston</span><br>
+        <span class=>© Joanna Preston</span><br><br>
         <a uk-icon="icon: github" href="https://github.com/jpreston-alt" class="contact-icon contact-link-icon"></a>
         <a uk-icon="icon: mail" class="contact-icon contact-link-icon" href="mailto:joannappreston@gmail.com"></a>
         <a uk-icon="icon: linkedin" href="https://www.linkedin.com/in/joanna-preston/"

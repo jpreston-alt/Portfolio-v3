@@ -2,11 +2,11 @@ body, html{
     font-weight: 300;
     font-family: 'Roboto', sans-serif !important;
     color: gray;
+    font-size: .85rem;
 }
 
 .uk-navbar {
     background: none !important;
-    /* background-color: rgb(255, 255, 255) !important; */
 }
 
 .nav-item:hover {
@@ -17,9 +17,7 @@ body, html{
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
-    /* width: 100%; */
     min-height: 1200px;
-    /* height: 725px; */
 }
 
 .skills-pic-section {
@@ -28,42 +26,36 @@ body, html{
     background-size: cover;
 }
 
-#logo-img {
-    height: 60px;
-    width: 60px;
-}
-
-.uk-height-large {
-    height: 620px;
-}
-
 h1, h3, h4, h5 {
-    /* font-weight: 300 !important; */
     font-family: 'Montserrat', sans-serif !important;
     color: #2c3e50 !important;
 }
 
 h2 {
     font-family: 'Roboto', sans-serif !important;
-    /* text-transform: uppercase; */
     color: #2c3e50;
 }
 
-.full-height {
-    height: 100%;
-}
-
 #title-container {
-    padding-top: 100px;
+    padding-top: 40px;
 }
 
 .subtitle {
     margin: 0px;
-    color: rgb(168, 167, 167);
     color: #b1b1b1 !important;
     font-family: 'Montserrat', sans-serif !important;
     text-transform: uppercase;
-    font-size: 18px
+}
+
+#about-me {
+    border: 1px solid #fda387;
+    padding: 30px;
+    border-radius: 20px;
+}
+
+#about-me-container {
+    margin-top: 520px;
+    padding-top: 30px;
 }
 
 .contact-li {
@@ -79,46 +71,50 @@ h2 {
     color: rgb(228, 228, 228) !important;
 }
 
+#contact-title {
+    color: white !important;
+}
+
 .footer {
     background-color: #2c3e50d8;
-    /* margin-top: 100px; */
     padding-top: 20px;
     padding-bottom: 10px;
     color: white;
     font-weight: lighter;
+    font-size: 12px;
+    text-transform: uppercase;
+}
+hr {
+    width: 7%;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #fda387;
+    height: 1px;
+    border: none;
+}
+
+.uk-offcanvas-bar {
+    background-color: #2c3e50d8;
+}
+
+a:hover {
+    color: #fda387 !important;
 }
 
 .portfolio-container, .skills-container {
     max-width: 1000px;
     margin-top: 200px;
-}
-
-.skills-container {
     padding-bottom: 100px;
 }
 
-/* CARDS */
+#portfolio-section, #skills-section {
+    margin-top: 60px;
+}
+
+/* PORTFOLIO CARDS */
 .pic-container {
     position: relative;
     height: 100%;
-}
-
-.overlay {
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    height: 100%;
-    width: 100%;
-    opacity: 0;
-    transition: .8s ease;
-    border-radius: 8px !important;
-}
-
-.overlay-card {
-    height: 100%;
-    width: 100%;
 }
 
 .project-description {
@@ -149,6 +145,10 @@ polyline {
     color: rgb(156, 231, 156);
     border: 1px solid #fda387;
     color: #fda387;
+    margin-left: 12px;
+    margin-right: 12px;
+    padding: 0px 11px 0px 11px;
+    font-size: 10px;
 }
 
 .portfolio-btn:hover {
@@ -157,65 +157,91 @@ polyline {
     border: none;
 }
 
-.skills-title, .portfolio-title {
-    margin-bottom: 40px;
-    margin-top: 120px;
-}
-
-/* .portfolio-title {
-    margin-top: 20px;
-    margin-bottom: 100px;
-} */
-
-.skills-icon {
-    color: #fda387;
-}
-
-.name-container {
-    padding-left: 50%;
-}
-
-#about-me-container {
-    margin-top: 225px;
-    padding-top: 200px;
-}
-
-hr {
-    width: 7%;
-    margin-left: auto;
-    margin-right: auto;
-    background-color: #fda387;
-    height: 1px;
-    border: none;
-    /* margin-top: 20px; */
-    /* margin-bottom: 20px; */
-}
-
-#portfolio-section, #skills-section {
-    margin-top: 60px;
-}
-
-#about-me {
-    border: 1px solid #fda387;
-    padding: 30px;
-    border-radius: 20px;
-}
-
 .portfolio-card {
     /* border: 1px solid #fda387;
     border-radius: 20px;
     box-shadow: none; */
 }
 
-.uk-offcanvas-bar {
-    background-color: #2c3e50d8;
+
+/* SKILLS SECTION */
+.skills-title, .portfolio-title {
+    margin-bottom: 40px;
+    margin-top: 120px;
 }
 
-#contact-title {
-    color: white !important;
+.skills-icon {
+    color: #fda387;
 }
 
-a:hover {
-    color: #fda387 !important;
+@media only screen and (max-width: 374px) {
+    #my-name {
+        font-size: 34px;
+    }
+
+    .subtitle {
+        font-size: 12px;
+    }
+
+    .portfolio-card-body {
+        padding: 15px;
+    }
+
+    .project-title {
+        padding-top: 0px;
+    }
+} 
+
+@media only screen and (min-width: 375px) {
+    .portfolio-btn {
+        margin-left: 12px;
+        margin-right: 12px;
+        padding: 0px 18px 0px 18px;
+        font-size: 12px;
+    }
+
+    #title-container {
+        padding-top: 40px;
+        padding-left: 10%;
+    }
+
+    .subtitle {
+        font-size: 14px;
+    }
 }
+
+@media only screen and (min-width: 460px) {
+    body, html{
+        font-size: 1rem;
+    }
+
+    .portfolio-btn {
+        margin-left: 5%;
+        margin-right: 5%;
+        padding: 0px 24px 0px 24px;
+        font-size: 14px;
+    }
+}
+
+@media only screen and (min-width: 769px) {
+    #about-me-container {
+        margin-top: 225px;
+        padding-top: 200px;
+        width: 65%;
+        padding-left: 35%;
+    }
+
+    #title-container {
+        padding-top: 100px;
+        padding-left: 50%;
+        width: 50%;
+    }   
+}
+
+@media only screen and (min-width: 960px) {
+    .subtitle {
+        font-size: 18px;
+    }
+}
+
 

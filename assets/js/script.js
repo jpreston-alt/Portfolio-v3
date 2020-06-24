@@ -99,17 +99,13 @@ $(document).ready(function () {
                         </div>
                     </div>
                     <div class="uk-card-footer portfolio-card-footer">
-                        <div class="uk-child-width-1-2@m uk-grid-match" uk-grid>
-                            <div>
-                                <a href="${card.siteURL}" target="_blank">
-                                    <button class="uk-button uk-button-default portfolio-btn">View Website</button>
-                                </a>
-                            </div>
-                            <div>
-                                <a href="${card.repoURL}" target="_blank">
-                                    <button class="uk-button uk-button-default portfolio-btn">GitHub Repo</button>
-                                </a>
-                            </div>
+                        <div class="uk-text-center">
+                            <a href="${card.siteURL}" target="_blank" class="btn-link">
+                                <button class="uk-button uk-button-default portfolio-btn">View Website</button>
+                            </a>
+                            <a href="${card.repoURL}" target="_blank" class="btn-link">
+                                <button class="uk-button uk-button-default portfolio-btn">GitHub Repo</button>
+                            </a>
                         </div>
                     </div>
                 </div>
