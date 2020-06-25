@@ -1,7 +1,6 @@
 $(document).ready(function () {
 
     $("#skills-nav").on("click", skillsAnimation);
-    $("#pic-section").on("click", loadBackgroundImg);
 
     // function consturctor Project Card
     function ProjectCard(title, about, imgURL, siteURL, repoURL) {
@@ -136,10 +135,8 @@ $(document).ready(function () {
     };
 
     function init() {
-        // render project cards
         projectCardsArr.forEach(renderCard);
         loadBackgroundImg();
-        // skillsAnimation();
     };
 
     function skillsAnimation() {
