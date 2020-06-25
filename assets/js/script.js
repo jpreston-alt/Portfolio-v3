@@ -15,23 +15,23 @@ $(document).ready(function () {
     // new Project Card instances
     const quarCard = new ProjectCard(
         "Quarentainment",
-        "Browse for trending movies, tv shows, and books to keep you entertained during your involuntary time at home. Save content to your personal list to remember for later.",
-        "assets/images/portfolio/quar.png",
+        "An entertainment application which allows the user to browse for trending movies, tv shows, and books to keep them entertained during their involuntary time at home. User may save content to their personal list to remember for later. Built using the NYT bestseller and movie reviews API, and The Movie Database API.",
+        "assets/images/portfolio/quar2.png",
         "https://jpreston-alt.github.io/Quarentainment/",
         "https://github.com/jpreston-alt/Quarentainment"
     );
 
     const weatherCard = new ProjectCard(
         "Weather Dashboard",
-        "View current and future weather conditions for any city. Past viewed cities are saved to search history for easier viewing in the future.",
-        "assets/images/portfolio/weather.png",
+        "An application that allows the user to view current and future weather conditions for any city. Past viewed cities are saved to search history for easier viewing in the future. Built using Open Weather Maps API, and Open Cage Geocoder API.",
+        "assets/images/portfolio/weather2.png",
         "https://jpreston-alt.github.io/Weather-Dashboard/",
         "https://github.com/jpreston-alt/Weather-Dashboard"
     );
 
     const plannerCard = new ProjectCard(
         "Work Day Planner",
-        "A simple calendar app for scheduling your work day. Color coded time blocks update depending on what time of day it is, allowing the user to see where they are in their day at a glance.",
+        "A simple calendar app for scheduling your work day. Color coded time blocks update depending on what time of day it is, allowing the user to see where they are in their day at a glance. Built with JavaScript and Moment.js.",
         "assets/images/portfolio/planner.png",
         "https://jpreston-alt.github.io/Day-Planner/",
         "https://github.com/jpreston-alt/Day-Planner"
@@ -47,16 +47,16 @@ $(document).ready(function () {
 
     const profileGenCard = new ProjectCard(
         "Team Profile Generator",
-        "A command-line-interface application, built with Node.js, that allows the user to easily generate a team profile webpage, featuring summaries of their team members.",
-        "assets/images/portfolio/team-profile.png",
-        "https://github.com/jpreston-alt/Team-Profile-Generator",
+        "A command-line-interface application that allows the user to easily generate a team profile webpage, featuring summaries of their team members. Built using Node and Inquirer.js.",
+        "assets/images/portfolio/team-profile2.png",
+        "https://drive.google.com/file/d/1GXXnc2q5sv7_aGnGXkHwB0Wg7uvSFpcF/view",
         "https://github.com/jpreston-alt/Team-Profile-Generator"
     );
 
     const notepadCard = new ProjectCard(
         "Notepad",
         "Organize your thoughts with Notepad, a note-taking application build with Express.js. Notepad helps you keep track of everything you need to remember by allowing you to save, view, and delete important reminders and thoughts.",
-        "assets/images/portfolio/notepad.png",
+        "assets/images/portfolio/notepad2.png",
         "https://jp-express-notepad.herokuapp.com/",
         "https://github.com/jpreston-alt/Express-Note-Taker",
     );
@@ -71,13 +71,21 @@ $(document).ready(function () {
 
     const budgetCard = new ProjectCard(
         "Check Yourself",
-        "A full-stack budgeting application, that helps the user track their monthly expenses and manage their money wisely, based on the 50/30/20 budgeting rule. Check Yourself is built using Node, a MySQL Database, and Passport for user authentication.",
+        "A full-stack budgeting application, that helps the user track their monthly expenses and manage their money wisely, based on the 50/30/20 budgeting rule. Check Yourself is built using Node, Express, Passport and a MySQL Database. Guest Login: guest@checkyourself.com, guestpw.",
         "assets/images/portfolio/check-yourself.png",
-        "https://jp-burger-logger.herokuapp.com/",
-        "https://jp-project2.herokuapp.com/"
+        "https://jp-project2.herokuapp.com/",
+        "https://github.com/jpreston-alt/Check-Yourself"
     );
 
-    let projectCardsArr = [budgetCard, quarCard, burgerCard, notepadCard, profileGenCard, weatherCard, plannerCard, quizCard];
+    const employeeCard = new ProjectCard(
+        "Employee Management System",
+        "A command-line, content management system, that allows business owners to easily manage and track information about their employees. Built using Node, Inquirer.js, and a MySQL database.",
+        "assets/images/portfolio/emp.png",
+        "https://drive.google.com/file/d/1to-rywQco0bl-7fDBKE7dkzV-utTVTK7/view",
+        "https://github.com/jpreston-alt/Employee-Tracker"
+    );
+
+    let projectCardsArr = [budgetCard, quarCard, burgerCard, notepadCard, employeeCard, weatherCard, profileGenCard, quizCard];
 
     // function to render project cards to screen
     function renderCard(card) {

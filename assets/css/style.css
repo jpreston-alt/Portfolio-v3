@@ -126,6 +126,7 @@ a:hover {
 
 .project-description {
     color: gray;
+    margin-top: 10px;
 }
 
 polyline {
@@ -144,6 +145,7 @@ polyline {
 
 .project-title {
     padding-top: 15px;
+    margin-bottom: 0px;
 }
 
 .portfolio-btn {
@@ -190,6 +192,7 @@ polyline {
 
     .project-title {
         padding-top: 0px;
+        margin-bottom: 0px;
     }
 } 
 
@@ -224,6 +227,10 @@ polyline {
 
     .subtitle {
         font-weight: 100;
+    }
+
+    .project-title {
+        margin-bottom: 15px;
     }
 }
 
