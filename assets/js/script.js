@@ -77,7 +77,7 @@ $(document).ready(function () {
     );
 
     const employeeCard = new ProjectCard(
-        "Employee Management System",
+        "Employee Tracker",
         "A command-line, content management system, that allows business owners to easily manage and track information about their employees. Built using Node, Inquirer.js, and a MySQL database.",
         "assets/images/portfolio/emp.png",
         "https://drive.google.com/file/d/1to-rywQco0bl-7fDBKE7dkzV-utTVTK7/view",
@@ -118,10 +118,10 @@ $(document).ready(function () {
                 </div>
             </div>`
 
-
         $("#portfolio-section").append(newCard);
     };
 
+    // background image fade in loading
     function loadBackgroundImg() {
         let img = new Image();
         img.src = "assets/images/top-left.jpeg";
@@ -135,10 +135,12 @@ $(document).ready(function () {
     };
 
     function init() {
+        // render portfolio cards
         projectCardsArr.forEach(renderCard);
         loadBackgroundImg();
     };
 
+    // skills section slide-in animation
     function skillsAnimation() {
         $(".client-side-card").addClass("slide-left");
         $(".server-side-card").addClass("slide-up");
