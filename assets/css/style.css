@@ -57,6 +57,7 @@ h2 {
     border: 1px solid #fda387;
     padding: 30px;
     border-radius: 20px;
+    background-color: white;
 }
 
 #about-me-container {
@@ -65,7 +66,7 @@ h2 {
 }
 
 .contact-li, .nav-li {
-    font-size: 1rem;
+    font-size: .95rem;
     padding-left: 10px;
     font-weight: 100;
     color: rgb(202, 200, 200) !important;
@@ -226,9 +227,15 @@ polyline {
     }
 }
 
+@media only screen and (min-width: 560px) {
+    #title-container {
+        padding-left: 30%;
+    }   
+}
+
 @media only screen and (min-width: 769px) {
     #about-me-container {
-        margin-top: 225px;
+        margin-top: 245px;
         padding-top: 200px;
         width: 65%;
         padding-left: 35%;
