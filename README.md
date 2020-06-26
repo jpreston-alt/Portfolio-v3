@@ -3,7 +3,7 @@
 ## Objective
 This site was built to showcase my web development portfolio. The goal for this webpage was to create a place where I could direct someone to find out a little more about me, see examples of my work, get access to my resume, LinkedIn profile, GitHub profile, and contact information.
 
-In the third revamping of my portfolio I really wanted to focus on building a UI that aligned with my goal as a web developer: creating user-friendly applications that are both functional and pretty to look at. I wanted the design to feel clean and modern, while adding some cool functionality like off screen sliding elements, and the sliding portfolio images.
+In the third revamping of my portfolio I really wanted to focus on building a UI that aligned with my goal as a web developer: creating user-friendly applications that are both functional and pretty to look at. I wanted the design to feel clean and simple, while adding some cool functionality like off screen sliding elements, and the sliding portfolio images.
 
 Since I've been spending so much time lately focusing on the back-end of web applications, I wanted to take this opportunity exercise my front-end skills and learn a new CSS Framework. Enter UIKit: an awesome, lightweight framework that achieves a simple and clean look. It even has some built in anaimation features and it's own icon library (yay!). I also tried out Animate.css, a css library that makes animating elements super simple. I learned alot, and had alot of fun with both UIKit and Animate.css, and will definitely be using both in the future!
 
