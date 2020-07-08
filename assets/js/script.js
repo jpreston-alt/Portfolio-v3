@@ -84,7 +84,15 @@ $(document).ready(function () {
         "https://github.com/jpreston-alt/Employee-Tracker"
     );
 
-    let projectCardsArr = [budgetCard, quarCard, burgerCard, notepadCard, employeeCard, weatherCard, profileGenCard, quizCard];
+    const fitnessCard = new ProjectCard(
+        "Fitness Tracker",
+        "An full-stack application that allows the user to track their daily workouts and fitness progress. Built using JavaScript, Node, Express, MongoDB, and Mongoose.",
+        "assets/images/portfolio/dashboard.png",
+        "https://jp-fitness-tracker.herokuapp.com/",
+        "https://github.com/jpreston-alt/fitness-tracker"
+    );
+
+    let projectCardsArr = [budgetCard, quarCard, burgerCard, notepadCard, fitnessCard, employeeCard, weatherCard, profileGenCard, quizCard];
 
     // function to render project cards to screen
     function renderCard(card) {
