@@ -92,7 +92,15 @@ $(document).ready(function () {
         "https://github.com/jpreston-alt/fitness-tracker"
     );
 
-    let projectCardsArr = [budgetCard, quarCard, burgerCard, notepadCard, fitnessCard, employeeCard, weatherCard, profileGenCard, quizCard];
+    const employeeDirCard = new ProjectCard(
+        "Employee Directory",
+        "An applicaiton, built with React, for viewing and filtering information about employees.",
+        "assets/images/portfolio/employee-dir.png",
+        "https://jpreston-alt.github.io/React-Employee-Directory/",
+        "https://github.com/jpreston-alt/React-Employee-Directory"
+    );
+
+    let projectCardsArr = [budgetCard, quarCard, employeeDirCard, burgerCard, notepadCard, fitnessCard, , weatherCard, profileGenCard,];
 
     // function to render project cards to screen
     function renderCard(card) {
